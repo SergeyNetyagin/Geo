@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Start.unity
+    guid: 9aa0c802c7b5af44c8ef8244af1ce1de
+  - enabled: 1
+    path: Assets/Scenes/Lobby.unity
+    guid: e161050b72051d74ebdb450a55fd4a44
+  - enabled: 1
+    path: Assets/Scenes/Location Bukit Song.unity
+    guid: 21a08cfbe1c7edd4b976e763b4a6dd98
+  - enabled: 1
+    path: Assets/Scenes/Location Hospital Road.unity
+    guid: 7dd460c11e2335f4e8de1ec7bb7fa04e
+  - enabled: 1
+    path: Assets/Scenes/Location Tusan A.unity
+    guid: 4897fb3797bcf1845b7dd96e24bf89bc
+  - enabled: 1
+    path: Assets/Scenes/Location Tusan B.unity
+    guid: 702ce69ac67659b45a11ff0ce88a25c3
+  - enabled: 0
+    path: Assets/Scenes/Distribution.unity
+    guid: 78d669ae681276d43ab480c9cca147bd
+  m_configObjects: {}
