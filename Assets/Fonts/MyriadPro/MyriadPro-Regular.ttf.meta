@@ -1,0 +1,46 @@
+fileFormatVersion: 2
+guid: 8f8229ac869f51e4092ef288920e3ac4
+timeCreated: 1534764386
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 128
+  forceTextureCase: -1
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Myriad Pro
+  fontNames:
+  - Myriad Pro
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 659ba400fb56b0743a40a866e1d1d0c5, type: 3}
+  - {fileID: 12800000, guid: 7191613052638e249b36760687ef8ee6, type: 3}
+  - {fileID: 12800000, guid: 2387f9c39eb16e74caf939bbfbf53b2d, type: 3}
+  - {fileID: 12800000, guid: 81d86ce3bb066944b94fda9c51bf0c24, type: 3}
+  - {fileID: 12800000, guid: 67e126d48fc9f514cb2cc69f9193f3f9, type: 3}
+  - {fileID: 12800000, guid: 8a32c6a7627668c4494eb32d6b02f765, type: 3}
+  - {fileID: 12800000, guid: 5068db98fecb0de4e849b8801c8a2dc2, type: 3}
+  - {fileID: 12800000, guid: 3d08e8d9b0b07fa458dbf093fc747e80, type: 3}
+  - {fileID: 12800000, guid: 57d8086a66e723d43adec72bacaa857b, type: 3}
+  - {fileID: 12800000, guid: 1aaa857ad9108904495d15729f61c460, type: 3}
+  - {fileID: 12800000, guid: 7b5e79da6a709ad42a04a8946f9d6186, type: 3}
+  - {fileID: 12800000, guid: 54f5eb4b49f8ca143bfc39dedcaa3185, type: 3}
+  - {fileID: 12800000, guid: 1dd008bcb83b735429221c92fe419516, type: 3}
+  - {fileID: 12800000, guid: 2bf9b0dca30091d42891172de39b7f5c, type: 3}
+  - {fileID: 12800000, guid: 7941110d4c029d0428315684b83f91a1, type: 3}
+  - {fileID: 12800000, guid: 3359c90d1ccd0d349997e81d5bf03930, type: 3}
+  - {fileID: 12800000, guid: 6dd4eb9dbd3841f4592817671c3bc992, type: 3}
+  - {fileID: 12800000, guid: 44eb167ef967304418efd39a7ec80e21, type: 3}
+  - {fileID: 12800000, guid: 04afb87e5a71254488e03dad0f929df5, type: 3}
+  - {fileID: 12800000, guid: 6341da7e250cb6a48a7bc3f4b4c080cd, type: 3}
+  - {fileID: 12800000, guid: 38a9ab1f26d087c499ef52aab799cf0d, type: 3}
+  - {fileID: 12800000, guid: 8b53bb3f32ab9414cb33f7bf8ff94183, type: 3}
+  - {fileID: 12800000, guid: 139e735f3a230d24c8bf0c79f672fdce, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

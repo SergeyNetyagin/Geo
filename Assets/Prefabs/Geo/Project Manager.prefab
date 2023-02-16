@@ -1,0 +1,593 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1300698905102120896
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3612680280017209118}
+  - component: {fileID: 1975266931959221418}
+  - component: {fileID: 360062974967431447}
+  m_Layer: 0
+  m_Name: Spectrum Audio Control
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3612680280017209118
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300698905102120896}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8713648907048885699}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1975266931959221418
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300698905102120896}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &360062974967431447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300698905102120896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98446023fd6cf814c853667026118f89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audio_source: {fileID: 1975266931959221418}
+  audio_source_transform: {fileID: 3612680280017209118}
+  audio_samples: 256
+  audio_channel: 0
+  audio_gain_time: 1
+  audio_damping_time: 1
+  audio_fft_window: 0
+  height_multiplier_right: 5
+  height_multiplier_left: 5.1
+--- !u!1 &4205194925657599333
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7185593806818882167}
+  - component: {fileID: 9200986487913140319}
+  m_Layer: 0
+  m_Name: Teleport Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7185593806818882167
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4205194925657599333}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: -30, y: 0, z: 9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8713648907048885699}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &9200986487913140319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4205194925657599333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e385936f897b644f88cb4f928d1f1a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &6679940351651185252
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6408881774660374704}
+  - component: {fileID: 904180040759825466}
+  - component: {fileID: 5139023370494687071}
+  - component: {fileID: 8972736432836089775}
+  m_Layer: 0
+  m_Name: Project Settings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6408881774660374704
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6679940351651185252}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8713648907048885699}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &904180040759825466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6679940351651185252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c1c46723730e84ca730722adad4051, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  head_altitude: 1.75
+  mouth_altitude: 1.65
+  private_space_radius: 0.65
+  player_collider_radius: 0.3
+--- !u!114 &5139023370494687071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6679940351651185252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b4628b36152fcb4084566be03b00230, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  locking_clip: {fileID: 0}
+  unlocking_clip: {fileID: 0}
+  stopping_clip: {fileID: 0}
+  motion_clip: {fileID: 0}
+  soft_contacting_clip: {fileID: 0}
+  solid_contacting_clip: {fileID: 0}
+  soft_falling_clip: {fileID: 0}
+  solid_falling_clip: {fileID: 0}
+  specific_sounds: []
+--- !u!114 &8972736432836089775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6679940351651185252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0963b9719117ed84e91395b5a99c148b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  subject_to_sensor_breaking_angle: 15
+  subject_to_sensor_breaking_distance: 0.025
+  drop_by_sensor_movement_gain: 1.5
+  drop_by_sensor_rotation_gain: 1.5
+  starting_push_force: 0.05
+  max_pressure_force: 1
+  drawer_to_sensor_breaking_distance: 0.25
+  drawer_distance_threshold: 0.01
+  drawer_force_curve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  drawer_constant_force: 200
+  drawer_force_mode: 0
+  door_to_sensor_breaking_distance: 0.25
+  door_force_curve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  door_constant_force: 200
+  door_force_mode: 0
+  wheel_to_sensor_breaking_distance: 0.25
+  wheel_force_curve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  wheel_constant_force: 200
+  wheel_force_mode: 0
+  cover_to_sensor_breaking_distance: 0.2
+  cover_force_curve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  cover_constant_force: 200
+  cover_force_mode: 0
+  soft_materials: []
+  solid_materials: []
+  fragile_materials: []
+  unbreakable_materials: []
+--- !u!1 &8931120631166944604
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8713648907048885699}
+  - component: {fileID: 3352363661105388885}
+  - component: {fileID: 4620465407492461092}
+  - component: {fileID: 7267336301441998721}
+  - component: {fileID: 4793635312755129377}
+  - component: {fileID: 5117883791966710606}
+  m_Layer: 0
+  m_Name: Project Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8713648907048885699
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8931120631166944604}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6408881774660374704}
+  - {fileID: 7185593806818882167}
+  - {fileID: 3612680280017209118}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3352363661105388885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8931120631166944604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40c2368a90c75774c8268ea641cd20f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  simple_point_prefab: {fileID: 1509722997996110, guid: 48bd5fc2c144ad140b51f2c07fa2b284,
+    type: 3}
+  lock_trigger_prefab: {fileID: 1647753881157836, guid: 2adc5396af0bf304b8e409e8f69561eb,
+    type: 3}
+  handle_trigger_prefab: {fileID: 1436691036084106, guid: 300511d275fe3094dbb4206c3929d8dc,
+    type: 3}
+  limiter_trigger_prefab: {fileID: 1121150321912470, guid: 78d5edc5bd5aa024cb3839d2c49f6be2,
+    type: 3}
+  tag_sensor: Sensor
+  tag_handle: Handle
+  tag_limiter: Limiter
+  tag_pointer: LaserPointer
+  layer_menu: UI
+  layer_laser_pointer: LaserPointer
+  layer_teleport_zone: TeleportZone
+  layer_blocking_zone: Block
+  steam_starting_timeout: 1
+  player_motion_check_mask:
+    serializedVersion: 2
+    m_Bits: 1
+  player_motion_check_max_distance: 5
+  player_motion_stop_distance: 0.5
+  make_screenshot_clip: {fileID: 8300000, guid: e6e8b5cb63b0941498c915d261c43c58,
+    type: 3}
+  load_scene_clip: {fileID: 8300000, guid: e8f97f4f6f127b940a6918b967b5b323, type: 3}
+  save_sketch_clip: {fileID: 8300000, guid: 6210be48d8a9c6b468b125e321b3dae4, type: 3}
+  load_sketch_clip: {fileID: 8300000, guid: 1e522d9b6506fc743a31053bedd013b6, type: 3}
+  screenshot_width: 1920
+  screenshot_height: 1080
+  sphere_follow_player: 0
+--- !u!114 &4620465407492461092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8931120631166944604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4d33d6be9b683b419984f142592e8b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  asset_bundles_default_folder: AssetBundles
+  config_files_runtime_folder: Geo Next Generation Networking_Data\StreamingAssets
+  screenshots_config_file_name: screenshots.config
+  assetbundles_config_file_name: assetbundles.config
+--- !u!114 &7267336301441998721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8931120631166944604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99faa5682fd3c86418cd8b5ae5a85cc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  use_async_loading: 1
+  loading_priority: 2
+  steam_loading_system_prefab: {fileID: 114260307159967616, guid: 4a9d74c023b4e814c88882cd082cfdf0,
+    type: 3}
+  start_scene_name: Start
+  lobby_scene_name: Lobby
+  main_scene_name: Lobby
+  scenes:
+  - Scene_name: Lobby
+    Scene_index: 1
+    Menu_image_sprite: {fileID: 0}
+    Scene_title: 
+    Scene_description: 
+    Player_position: {x: 0, y: 0, z: 0}
+    Player_rotation: {x: 0, y: 0, z: 0}
+  - Scene_name: Location Bukit Song
+    Scene_index: 2
+    Menu_image_sprite: {fileID: 0}
+    Scene_title: 
+    Scene_description: 
+    Player_position: {x: 0, y: 0, z: 0}
+    Player_rotation: {x: 0, y: 0, z: 0}
+  - Scene_name: Location Hospital Road
+    Scene_index: 3
+    Menu_image_sprite: {fileID: 0}
+    Scene_title: 
+    Scene_description: 
+    Player_position: {x: 0, y: 0, z: 0}
+    Player_rotation: {x: 0, y: 0, z: 0}
+  - Scene_name: Location Tusan A
+    Scene_index: 4
+    Menu_image_sprite: {fileID: 0}
+    Scene_title: 
+    Scene_description: 
+    Player_position: {x: 0, y: 0, z: 0}
+    Player_rotation: {x: 0, y: 0, z: 0}
+  - Scene_name: Location Tusan B
+    Scene_index: 5
+    Menu_image_sprite: {fileID: 0}
+    Scene_title: 
+    Scene_description: 
+    Player_position: {x: 0, y: 0, z: 0}
+    Player_rotation: {x: 0, y: 0, z: 0}
+--- !u!114 &4793635312755129377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8931120631166944604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b73e0d290e7db149888227494d67130, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  expiration_file_folder: Data
+  expiration_filename: application.config
+  incorrect_file_message: 'Application config file is incorrect, therefore the application
+    cannot work.
+
+    Please contact your supplier for further instructions.
+
+    The
+    application is shutting down...'
+  expiration_limit_message: 'This application has reached its expiration date.
+
+    Please
+    contact your supplier for further instructions.
+
+    The application is shutting
+    down...'
+  end_day: 14
+  end_month: 6
+  end_year: 2057
+  unlimited_using_day: 15
+  unlimited_using_month: 6
+  unlimited_using_year: 2057
+  onReadConfigFile:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &5117883791966710606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8931120631166944604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c90b5460f4f8cf47afd5769bcafaeeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  company: 1
+  product_name: Geo
+  package_name_prefix: com
+  company_features:
+  - company: 0
+    company_name: Petronas
+    assembly_icon_texture: {fileID: 2800000, guid: d1aaaee72e7545241abf5004aa1cd746,
+      type: 3}
+    company_logo_texture: {fileID: 2800000, guid: d1aaaee72e7545241abf5004aa1cd746,
+      type: 3}
+    splash_image_sprite: {fileID: 21300000, guid: 8cb3117f24be3bc479e5266f37267821,
+      type: 3}
+    logo_horizontal_sprite: {fileID: 21300000, guid: 25184e9dfb8f14149abe1bcc5084568f,
+      type: 3}
+    logo_square_sprite: {fileID: 21300000, guid: 5fe04ead84343be499b608b4fa94f177,
+      type: 3}
+    logo_for_video_sprite: {fileID: 21300000, guid: 5fe04ead84343be499b608b4fa94f177,
+      type: 3}
+    basic_color: {r: 0, g: 0.5215686, b: 0.49411762, a: 1}
+    hotspot_color: {r: 0, g: 0.5215686, b: 0.49411762, a: 1}
+    arrow_color: {r: 0, g: 0.5215686, b: 0.49411762, a: 0.5882353}
+    spectrum_color_upper: {r: 0, g: 0.5215686, b: 0.49411762, a: 1}
+    spectrum_color_lower: {r: 0, g: 0.5215686, b: 0.49411762, a: 0.5882353}
+  - company: 1
+    company_name: PetroEDGE
+    assembly_icon_texture: {fileID: 2800000, guid: 4128d64b445caba43a87f18132450946,
+      type: 3}
+    company_logo_texture: {fileID: 2800000, guid: 4128d64b445caba43a87f18132450946,
+      type: 3}
+    splash_image_sprite: {fileID: 21300000, guid: 4128d64b445caba43a87f18132450946,
+      type: 3}
+    logo_horizontal_sprite: {fileID: 21300000, guid: 2bdf19de8409aa7489f97bca9febd3e5,
+      type: 3}
+    logo_square_sprite: {fileID: 21300000, guid: e4a3e1ad8707ab94cab9c8966785aa78,
+      type: 3}
+    logo_for_video_sprite: {fileID: 21300000, guid: 2bdf19de8409aa7489f97bca9febd3e5,
+      type: 3}
+    basic_color: {r: 0.20392157, g: 0.30980393, b: 0.83137256, a: 1}
+    hotspot_color: {r: 0.20392157, g: 0.30980393, b: 0.83137256, a: 1}
+    arrow_color: {r: 0.20392157, g: 0.30980393, b: 0.83137256, a: 0.5882353}
+    spectrum_color_upper: {r: 0.20392157, g: 0.30980393, b: 0.83137256, a: 1}
+    spectrum_color_lower: {r: 0.20392157, g: 0.30980393, b: 0.83137256, a: 0.5882353}
+  onStartScene:
+    m_PersistentCalls:
+      m_Calls: []
+  onApplicationQuit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5117883791966710606}
+        m_MethodName: RemoveKey
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Intro Bukit Song
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5117883791966710606}
+        m_MethodName: RemoveKey
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Intro Hospital Road
+          m_BoolArgument: 0
+        m_CallState: 2

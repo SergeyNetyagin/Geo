@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1533562187088735568
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1533562187088735571}
+  - component: {fileID: 4674317569962871405}
+  m_Layer: 0
+  m_Name: Painting Control
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1533562187088735571
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533562187088735568}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1533562187766550099}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4674317569962871405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533562187088735568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71b15081a91d6f847baa68918e151dcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  painting_point_prefab: {fileID: -7271852370825763465, guid: 9bf88b52310fe3c4197df7666cf72966,
+    type: 3}
+  paint_line_length: 0.01
+  paint_line_width: 0.05
+  paint_cell_offset: 0.001
+  eraser_cell_size: 0.05
+  painting_group_local: {fileID: 4142199872216040870}
+  paints:
+  - Painting_color: 1
+    Painting_material: {fileID: 2100000, guid: d6b6555a4c603a94397c42cd98d98814, type: 2}
+  - Painting_color: 2
+    Painting_material: {fileID: 2100000, guid: 76334e7cbdcd32c4d8d31ee7d9e28d4e, type: 2}
+  - Painting_color: 3
+    Painting_material: {fileID: 2100000, guid: 2673be7426add5a418b57c8ce50a0283, type: 2}
+  - Painting_color: 4
+    Painting_material: {fileID: 2100000, guid: 4321d00b49ae7dd4b90cefc279ee1b66, type: 2}
+  - Painting_color: 5
+    Painting_material: {fileID: 2100000, guid: 41eece8db40345b43be9003b704410d5, type: 2}
+--- !u!1 &1533562187766550096
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1533562187766550099}
+  - component: {fileID: 4142199872216040870}
+  m_Layer: 0
+  m_Name: Painting Group Local
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1533562187766550099
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533562187766550096}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1533562187088735571}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4142199872216040870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533562187766550096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b08ae1535e79bc24fbe8e8ce0f98ea77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

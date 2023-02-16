@@ -1,0 +1,18 @@
+AssetBundles
+Documents
+Packages
+Rocks
+Skyboxes
+Textures
+Video
+Geo Video Source
+Library
+Temp
+Logs
+obj
+.vs
+Assembly*.*
+*.vsidx
+*.lock
+*.suo
+*.ide
