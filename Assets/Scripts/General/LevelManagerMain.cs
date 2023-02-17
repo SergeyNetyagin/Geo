@@ -42,30 +42,35 @@ namespace VostokVR.Geo {
 
         [Space( 10 ), SerializeField]
         private CanvasControllerMode canvas_controller_mode = CanvasControllerMode.Normal;
-        public CanvasControllerMode Canvas_controller_mode { get { return canvas_controller_mode; } }
+        public CanvasControllerMode Canvas_controller_mode => canvas_controller_mode;
 
         [SerializeField]
         private CanvasHotspotsMode canvas_hotspots_mode = CanvasHotspotsMode.Visible;
-        public CanvasHotspotsMode Canvas_hotspots_mode { get { return canvas_hotspots_mode; } }
+        public CanvasHotspotsMode Canvas_hotspots_mode => canvas_hotspots_mode;
 
         [Space( 10 ), SerializeField]
         private GameObject[] helmet_invisible_objects;
 
         [Space( 10 ), SerializeField]
         protected Transform instantiating_group_parent;
-        public Transform Instantiating_group_parent { get { return instantiating_group_parent; } }
+        public Transform Instantiating_group_parent => instantiating_group_parent;
 
         [Space( 10 ), SerializeField]
         private TexturesQualityControl rocks;
-        public TexturesQualityControl Rocks { get { return rocks; } }
+        public TexturesQualityControl Rocks => rocks;
 
         [SerializeField]
         private PanoramaControl panorama;
-        public PanoramaControl Panorama { get { return panorama; } }
+        public PanoramaControl Panorama => panorama;
 
         [SerializeField]
         private MeshRenderer ground_mesh_renderer;
-        public MeshRenderer Ground_mesh_renderer { get { return ground_mesh_renderer; } }
+        public MeshRenderer Ground_mesh_renderer => ground_mesh_renderer;
+
+        [SerializeField]
+        private string geolocation = string.Empty;
+        public string Geolocation => geolocation;
+
 
         // Use this for initialization ####################################################################################################################################################################################################################
         protected override void Awake() {
