@@ -277,18 +277,21 @@ namespace VostokVR.Geo {
         // ################################################################################################################################################################################################################################################
         public void OnClickSliderHandle() {
 
-            #if( UNITY_EDITOR )
             if( !SteamVR.active ) { 
             
-                Debug.LogError( "<DRAG HANDLE SPHERE> event detected with mouse: it is not correct action!" );
+                video_player.time = slider_control.value;
+
+                return;
             }
-            #endif
 
-            ViveInteractionsManager.Instance.Vive_pointer_right.Input_manager.Hovered_video_control_handle = this;
+            else {
 
-            drag_handle_sphere = true;
+                ViveInteractionsManager.Instance.Vive_pointer_right.Input_manager.Hovered_video_control_handle = this;
 
-            Pause();
+                drag_handle_sphere = true;
+
+                Pause();
+            }
         }
 
         // ################################################################################################################################################################################################################################################

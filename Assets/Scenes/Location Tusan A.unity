@@ -2197,6 +2197,7 @@ MonoBehaviour:
   rocks: {fileID: 1690713178152154372}
   panorama: {fileID: 2899696988492482148}
   ground_mesh_renderer: {fileID: 3349957546778299739}
+  geolocation: 
 --- !u!4 &2115070313
 Transform:
   m_ObjectHideFlags: 0

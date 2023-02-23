@@ -675,7 +675,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Tusan B
+          m_StringArgument: Location Tusan B
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &284317702
@@ -1136,7 +1136,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Hospital Road
+          m_StringArgument: Location Hospital Road
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &675044782
@@ -2794,7 +2794,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Tusan A
+          m_StringArgument: Location Tusan A
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1765675603
@@ -3249,7 +3249,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Bukit Song
+          m_StringArgument: Location Bukit Song
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1873117972
