@@ -170,7 +170,7 @@ namespace VostokVR.Geo {
                     level_manager_main = FindObjectOfType<LevelManagerMain>();
                 }
 
-                bool activate = SteamVR.active ? true : (level_manager_main.Canvas_controller_mode != CanvasControllerMode.Hidden);
+                bool activate = SteamVR.active ? true : (level_manager_main.Starting_controller_mode != CanvasControllerMode.Hidden);
                 
                 hotspots_scene_attribute.gameObject.SetActive( activate );
             }

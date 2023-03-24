@@ -539,11 +539,11 @@ MonoBehaviour:
       type: 3}
     logo_for_video_sprite: {fileID: 21300000, guid: 5fe04ead84343be499b608b4fa94f177,
       type: 3}
-    basic_color: {r: 0, g: 0.5215686, b: 0.49411762, a: 1}
-    hotspot_color: {r: 0, g: 0.5215686, b: 0.49411762, a: 1}
-    arrow_color: {r: 0, g: 0.5215686, b: 0.49411762, a: 0.5882353}
-    spectrum_color_upper: {r: 0, g: 0.5215686, b: 0.49411762, a: 1}
-    spectrum_color_lower: {r: 0, g: 0.5215686, b: 0.49411762, a: 0.5882353}
+    basic_color: {r: 0.43529415, g: 0.75294125, b: 0.8470589, a: 1}
+    hotspot_color: {r: 0.43529415, g: 0.75294125, b: 0.8470589, a: 1}
+    arrow_color: {r: 0.43529415, g: 0.75294125, b: 0.8470589, a: 0.5882353}
+    spectrum_color_upper: {r: 0.43529415, g: 0.75294125, b: 0.8470589, a: 1}
+    spectrum_color_lower: {r: 0.43529415, g: 0.75294125, b: 0.8470589, a: 0.5882353}
   - company: 1
     company_name: PetroEDGE
     assembly_icon_texture: {fileID: 2800000, guid: 4128d64b445caba43a87f18132450946,

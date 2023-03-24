@@ -459,7 +459,7 @@ namespace VostokVR.Geo {
                 level_manager_main = FindObjectOfType<LevelManagerMain>();
             }
 
-            bool activate = SteamVR.active ? true : (level_manager_main.Canvas_controller_mode != CanvasControllerMode.Hidden);
+            bool activate = SteamVR.active ? true : (level_manager_main.Starting_controller_mode != CanvasControllerMode.Hidden);
             
             PC_mode = !SteamVR.active;
 
@@ -1563,7 +1563,7 @@ namespace VostokVR.Geo {
                 }
             }
 
-            else if( LevelManagerMain.Instance.Canvas_controller_mode == CanvasControllerMode.Small ) { 
+            else if( LevelManagerMain.Instance.Starting_controller_mode == CanvasControllerMode.Small ) { 
 
                 canvas_transform.SetParent( ViveInteractionsManager.Instance.Eye_camera_transform );
 

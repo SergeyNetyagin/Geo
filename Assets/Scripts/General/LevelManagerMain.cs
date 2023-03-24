@@ -41,12 +41,12 @@ namespace VostokVR.Geo {
         public static LevelManagerMain Instance { get; private set; }
 
         [Space( 10 ), SerializeField]
-        private CanvasControllerMode canvas_controller_mode = CanvasControllerMode.Normal;
-        public CanvasControllerMode Canvas_controller_mode => canvas_controller_mode;
+        private CanvasControllerMode starting_controller_mode = CanvasControllerMode.Normal;
+        public CanvasControllerMode Starting_controller_mode => starting_controller_mode;
 
         [SerializeField]
-        private CanvasHotspotsMode canvas_hotspots_mode = CanvasHotspotsMode.Visible;
-        public CanvasHotspotsMode Canvas_hotspots_mode => canvas_hotspots_mode;
+        private CanvasHotspotsMode starting_hotspots_mode = CanvasHotspotsMode.Visible;
+        public CanvasHotspotsMode Starting_hotspots_mode => starting_hotspots_mode;
 
         [Space( 10 ), SerializeField]
         private GameObject[] helmet_invisible_objects;
