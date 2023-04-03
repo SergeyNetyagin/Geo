@@ -10367,7 +10367,7 @@ MonoBehaviour:
   instruction_pc_desktop: {fileID: 233516977}
   instruction_menu_vr: {fileID: 1580905233}
   instruction_menu_pc: {fileID: 5766084240839169566}
-  non_vr_mode_local_position: {x: 0, y: 0, z: 0.15}
+  non_vr_mode_local_position: {x: 0, y: -0.01, z: 0.15}
   non_vr_mode_local_rotation: {x: 0, y: 0, z: 0}
   non_vr_mode_local_scale: {x: 1, y: 1, z: 1}
   vr_mode_local_position: {x: 0, y: 0.125, z: 0.125}
@@ -26142,6 +26142,7 @@ GameObject:
   - component: {fileID: 4061084239112670319}
   - component: {fileID: 4061084239112670318}
   - component: {fileID: 4061084239112670097}
+  - component: {fileID: 182363537666633616}
   m_Layer: 0
   m_Name: Button Close Instructions
   m_TagString: Untagged
@@ -26357,6 +26358,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &182363537666633616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4061084239112670099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55ab1023f56f53147853145db90b196a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4086516333584086304
 GameObject:
   m_ObjectHideFlags: 0
@@ -35639,17 +35652,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: '<b>Painting</b> - opens/closes painting mode.
-
-    The paint bar includes
-    from L-R: "Clear all",
-
-    eraser, colour palette, and screen shot.
-
-    Screenshots
-    will be saved in the file folder.
-
-'
+  m_Text: "<b>Painting</b> - opens/closes painting mode.\nThe paint bar includes
+    colour palette and \nfrom L-R: \"Clear all\", screen shot, \"Eraser\". \nScreenshots
+    will be saved in the file folder.\n"
 --- !u!1 &8528642937657059265
 GameObject:
   m_ObjectHideFlags: 0

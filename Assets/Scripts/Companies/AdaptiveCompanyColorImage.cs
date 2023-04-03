@@ -21,6 +21,13 @@ namespace VertexStudio.Generic {
             
                 item.color = ProjectManager.Instance.GetCompanyColor( ColorType.BasicColor );
             }
+
+            ImageSelectedColor image_selected_color_component = GetComponent<ImageSelectedColor>();
+
+            if( (image_selected_color_component != null) && (item is Image) ) { 
+            
+                image_selected_color_component.Normal_color = item.color;
+            }
         }
     }
 }

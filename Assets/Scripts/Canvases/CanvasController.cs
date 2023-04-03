@@ -732,15 +732,15 @@ namespace VostokVR.Geo {
         // Shows rocks ####################################################################################################################################################################################################################################
         public void ShowRocks() { 
 
+            CanvasHotspots.Instance.Panel_all_scenes_hotspots.gameObject.SetActive( true );
+
             LevelManagerMain.Instance.Rocks.ShowRocks();
             LevelManagerMain.Instance.Ground_mesh_renderer.enabled = true;
             LevelManagerMain.Instance.Panorama.gameObject.SetActive( false );
 
-            CanvasHotspots.Instance.Panel_all_scenes_hotspots.gameObject.SetActive( true );
-            CanvasHotspots.Instance.Panel_all_scenes_hotspots.gameObject.GetComponent<SceneAttributeControl>().ActivateObject( SceneManager.GetActiveScene().name );
-
             PaintingControl.Instance.ShowAllPaintings();
 
+            SetButtonState( ActiveMode.Hotspots, CanvasHotspots.Instance.Scene_hotspots_control.gameObject.activeSelf );
             SetButtonState( ActiveMode.Panorama, !LevelManagerMain.Instance.Rocks.Is_visible, ActiveMode.Movement );
         }
 
@@ -761,6 +761,7 @@ namespace VostokVR.Geo {
 
             DeactivatePaintingPanel();
 
+            SetButtonState( ActiveMode.Hotspots, CanvasHotspots.Instance.Scene_hotspots_control.gameObject.activeSelf );
             SetButtonState( ActiveMode.Panorama, !LevelManagerMain.Instance.Rocks.Is_visible, ActiveMode.Movement );
         }
 
@@ -817,7 +818,7 @@ namespace VostokVR.Geo {
         // Switch hotspots panel ##########################################################################################################################################################################################################################
         public void SwitchHotspotsPanel() { 
 
-            if( CanvasHotspots.Instance.Panel_all_scenes_hotspots.gameObject.activeSelf ) {
+            if( CanvasHotspots.Instance.Scene_hotspots_control.gameObject.activeSelf ) {
 
                 HideHotspotsPanel();
             }
@@ -827,7 +828,7 @@ namespace VostokVR.Geo {
                 ShowHotspotsPanel();
             }
 
-            SetButtonState( ActiveMode.Hotspots, CanvasHotspots.Instance.Panel_all_scenes_hotspots.gameObject.activeSelf, ActiveMode.Movement );
+            SetButtonState( ActiveMode.Hotspots, CanvasHotspots.Instance.Scene_hotspots_control.gameObject.activeSelf, ActiveMode.Movement );
 
             if( (NetworkProjectManager.Instance != null) && PhotonNetwork.isMasterClient ) {
 
@@ -836,7 +837,7 @@ namespace VostokVR.Geo {
                     NetworkTransactionsControlTools.Instance.SetHotspotsPanelActive( 
                         
                         VertexStudio.Networking.NetworkPlayer.Instance.View_ID, 
-                        CanvasHotspots.Instance.Panel_all_scenes_hotspots.gameObject.activeSelf, 
+                        CanvasHotspots.Instance.Scene_hotspots_control.gameObject.activeSelf, 
                         SceneManager.GetActiveScene().name 
                     );
                 }
@@ -846,14 +847,13 @@ namespace VostokVR.Geo {
         // Shows hotspots panel ###########################################################################################################################################################################################################################
         public void ShowHotspotsPanel() { 
 
-            CanvasHotspots.Instance.Panel_all_scenes_hotspots.gameObject.SetActive( true );
-            CanvasHotspots.Instance.Panel_all_scenes_hotspots.ActivateObject( SceneManager.GetActiveScene().name );
+            CanvasHotspots.Instance.Scene_hotspots_control.gameObject.SetActive( true );
         }
 
         // Hides hotspots panel ###########################################################################################################################################################################################################################
         public void HideHotspotsPanel() { 
 
-            CanvasHotspots.Instance.Panel_all_scenes_hotspots.gameObject.SetActive( false );
+            CanvasHotspots.Instance.Scene_hotspots_control.gameObject.SetActive( false );
         }
 
         // Switch painting panel ##########################################################################################################################################################################################################################
