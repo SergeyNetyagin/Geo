@@ -2102,8 +2102,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   excluded_helmet_colliders: []
-  canvas_controller_mode: 0
-  canvas_hotspots_mode: 0
+  starting_controller_mode: 0
+  starting_hotspots_mode: 0
   helmet_invisible_objects:
   - {fileID: 205588574}
   instantiating_group_parent: {fileID: 996650440623743905}

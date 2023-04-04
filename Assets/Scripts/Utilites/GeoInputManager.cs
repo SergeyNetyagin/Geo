@@ -19,16 +19,16 @@ namespace VostokVR.Geo {
         protected KeyCode key_screenshot = KeyCode.P;
 
         [Space( 10 ), SerializeField]
-        protected KeyCode key_fast_loading_hidden_menu_hospital_road = KeyCode.F5;
+        protected KeyCode key_fast_loading_hospital_road = KeyCode.F5;
 
         [SerializeField]
-        protected KeyCode key_fast_loading_hidden_menu_bukit_song = KeyCode.F6;
+        protected KeyCode key_fast_loading_bukit_song = KeyCode.F6;
 
         [SerializeField]
-        protected KeyCode key_fast_loading_hidden_menu_tusan_a = KeyCode.F7;
+        protected KeyCode key_fast_loading_tusan_a = KeyCode.F7;
 
         [SerializeField]
-        protected KeyCode key_fast_loading_hidden_menu_tusan_b = KeyCode.F8;
+        protected KeyCode key_fast_loading_tusan_b = KeyCode.F8;
 
         [Space( 10 ), SerializeField]
         private bool use_keyboard_in_vr_mode = true;
@@ -40,7 +40,10 @@ namespace VostokVR.Geo {
         protected PaintingEraser painting_eraser;
         public PaintingEraser Painting_eraser { get { return painting_eraser; } }
 
-        // Use this for initialization #####################################################################################################################################################################################################################
+
+        /// <summary>
+        /// Use this for initialization.
+        /// </summary>
         protected override void Awake() {
             
             Instance = this;
@@ -48,7 +51,10 @@ namespace VostokVR.Geo {
             base.Awake();
         }
 
-        // Use this for initialization #####################################################################################################################################################################################################################
+
+        /// <summary>
+        /// Use this for initialization.
+        /// </summary>
         protected override void Start() {
 		
             base.Start();
@@ -88,7 +94,10 @@ namespace VostokVR.Geo {
             }
 	    }
 
-        // LateUpdate is called once per frame #############################################################################################################################################################################################################
+
+        /// <summary>
+        /// LateUpdate is called once per frame.
+        /// </summary>
         protected override void LateUpdate() {
 
             if( SteamVR.active && enabled && !use_keyboard_in_vr_mode ) { 
@@ -108,27 +117,27 @@ namespace VostokVR.Geo {
                 //if( (LevelManagerMain.Instance != null) && (LevelManagerMain.Instance.Canvas_controller_mode == CanvasControllerMode.Hidden) ) { 
                 if( LevelManagerMain.Instance != null ) { 
 
-                    if( Input.GetKeyDown( key_fast_loading_hidden_menu_hospital_road ) ) { 
+                    if( Input.GetKeyDown( key_fast_loading_hospital_road ) ) { 
                     
-                        CanvasController.Instance.Loading_scene_name = "Hospital Road";
+                        CanvasController.Instance.Loading_scene_name = ScenesManager.Instance.GetSceneNameByIndex( 3 );
                         CanvasController.Instance.LoadPredefinedSceneSingle();
                     }
             
-                    if( Input.GetKeyDown( key_fast_loading_hidden_menu_bukit_song ) ) { 
+                    if( Input.GetKeyDown( key_fast_loading_bukit_song ) ) { 
                     
-                        CanvasController.Instance.Loading_scene_name = "Bukit Song";
+                        CanvasController.Instance.Loading_scene_name = ScenesManager.Instance.GetSceneNameByIndex( 2 );
                         CanvasController.Instance.LoadPredefinedSceneSingle();
                     }
 
-                    else if( Input.GetKeyDown( key_fast_loading_hidden_menu_tusan_a ) ) { 
+                    else if( Input.GetKeyDown( key_fast_loading_tusan_a ) ) { 
                     
-                        CanvasController.Instance.Loading_scene_name = "Tusan A";
+                        CanvasController.Instance.Loading_scene_name = ScenesManager.Instance.GetSceneNameByIndex( 4 );
                         CanvasController.Instance.LoadPredefinedSceneSingle();
                     }
 
-                    else if( Input.GetKeyDown( key_fast_loading_hidden_menu_tusan_b ) ) { 
+                    else if( Input.GetKeyDown( key_fast_loading_tusan_b ) ) { 
                     
-                        CanvasController.Instance.Loading_scene_name = "Tusan B";
+                        CanvasController.Instance.Loading_scene_name = ScenesManager.Instance.GetSceneNameByIndex( 5 );
                         CanvasController.Instance.LoadPredefinedSceneSingle();
                     }
                 }
@@ -138,7 +147,10 @@ namespace VostokVR.Geo {
             }
         }
 
-        // For non-VR-mode only: keyboard input processing #################################################################################################################################################################################################
+
+        /// <summary>
+        /// For non-VR-mode only: keyboard input processing.
+        /// </summary>
         protected override void ProcessKeyboardInput() {
 
             base.ProcessKeyboardInput();
@@ -159,7 +171,10 @@ namespace VostokVR.Geo {
             }
         }
 
-        // For non-VR mode only: mouse input processing ####################################################################################################################################################################################################
+
+        /// <summary>
+        /// For non-VR mode only: mouse input processing.
+        /// </summary>
         protected override void ProcessMouseInput() {
 
             // Disable painting or erasing mode

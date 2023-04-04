@@ -2637,17 +2637,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1273c7bb7d4d4a5408084a60872beff6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  use_movement: 1
+  use_rotation: 1
   use_menu_button: 1
   use_trigger_button: 1
   use_pad_button: 1
   use_touchpad_button: 1
   use_grip_button: 1
   target_transform: {fileID: 8938383039987937721}
-  acceleration_key: 304
-  accelerated_speed: 5
+  acceleration_speed: 5
   keyboard_movement_speed: 2
   mouse_rotation_speed: 10
-  use_in_vr_mode: 1
+  key_acceleration: 304
+  key_acceleration_alternative: 303
+  key_forward: 119
+  key_forward_alternative: 273
+  key_backward: 115
+  key_backward_alternative: 274
+  key_left: 97
+  key_left_alternative: 276
+  key_right: 100
+  key_right_alternative: 275
+  key_up: 113
+  key_up_alternative: 280
+  key_down: 101
+  key_down_alternative: 281
+  key_menu: 0
+  key_instructions: 105
+  key_screenshot: 112
+  key_fast_loading_hidden_menu_hospital_road: 286
+  key_fast_loading_hidden_menu_bukit_song: 287
+  key_fast_loading_hidden_menu_tusan_a: 288
+  key_fast_loading_hidden_menu_tusan_b: 289
+  use_keyboard_in_vr_mode: 1
 --- !u!114 &6431838869698954755
 MonoBehaviour:
   m_ObjectHideFlags: 0

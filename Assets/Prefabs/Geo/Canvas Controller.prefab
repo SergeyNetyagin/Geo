@@ -1059,17 +1059,17 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 38
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 101
     m_Alignment: 0
     m_AlignByGeometry: 0
-    m_RichText: 0
+    m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: '5 - E or Page-Down keys: moves user down.'
+  m_Text: '5 - <b>E</b> or <b>Page-Down</b> keys: moves user down.'
 --- !u!1 &385599228
 GameObject:
   m_ObjectHideFlags: 0
@@ -2289,17 +2289,17 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 38
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 101
     m_Alignment: 0
     m_AlignByGeometry: 0
-    m_RichText: 0
+    m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: '1 - WASD keys: horizontal movement of user.'
+  m_Text: '1 - <b>WASD</b> keys: horizontal movement of user.'
 --- !u!1 &706455185
 GameObject:
   m_ObjectHideFlags: 0
@@ -2706,7 +2706,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 766681798}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0011214677}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1170125335}
@@ -2715,7 +2715,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 81, y: -165}
+  m_AnchoredPosition: {x: 81.0009, y: -104.50076}
   m_SizeDelta: {x: 0.02, y: 0.01}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &766681801
@@ -2754,16 +2754,12 @@ MonoBehaviour:
     m_MaxSize: 101
     m_Alignment: 0
     m_AlignByGeometry: 0
-    m_RichText: 0
+    m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'F5, F6, F7, F8 - quick loading of the relevant
-
-    following scenes:
-    Hospital Road, Bukit Song,
-
-    Tusan A, Tusan B (when Menu is invisible).'
+  m_Text: "Quick loading of the relevant following scenes:\n<b>F5</b> - Hospital
+    Road, \n<b>F6</b> - Bukit Song,\n<b>F7</b> - Tusan A,\n<b>F8</b> - Tusan B."
 --- !u!1 &775919510
 GameObject:
   m_ObjectHideFlags: 0
@@ -2781,7 +2777,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &775919511
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2790,7 +2786,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 775919510}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0011214677}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 241821926}
@@ -2799,7 +2795,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 81, y: -121.5}
+  m_AnchoredPosition: {x: 81.0009, y: -103.00076}
   m_SizeDelta: {x: 0.02, y: 0.01}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &775919513
@@ -3517,7 +3513,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 912208360}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0011214677}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1874738347}
@@ -3526,7 +3522,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 81, y: -81.500206}
+  m_AnchoredPosition: {x: 81.0009, y: -63.00097}
   m_SizeDelta: {x: 0.02, y: 0.01}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &912208363
@@ -3565,11 +3561,11 @@ MonoBehaviour:
     m_MaxSize: 101
     m_Alignment: 0
     m_AlignByGeometry: 0
-    m_RichText: 0
+    m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: P - quick screenshot;
+  m_Text: <b>P</b> - quick screenshot;
 --- !u!1 &914731096
 GameObject:
   m_ObjectHideFlags: 0
@@ -3949,17 +3945,17 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 38
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 101
     m_Alignment: 0
     m_AlignByGeometry: 0
-    m_RichText: 0
+    m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: '4 - Q or Page-Up keys: moves user up.'
+  m_Text: '4 - <b>Q</b> or <b>Page-Up</b> keys: moves user up.'
 --- !u!1 &1001070155
 GameObject:
   m_ObjectHideFlags: 0
@@ -5753,17 +5749,17 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 38
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 101
     m_Alignment: 0
     m_AlignByGeometry: 0
-    m_RichText: 0
+    m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "2 - Additional arrow keys for horizontal\n     movement of user."
+  m_Text: "2 - Additional <b>arrow keys</b> for horizontal\n     movement of user."
 --- !u!1 &1373709964
 GameObject:
   m_ObjectHideFlags: 0
@@ -6278,7 +6274,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1461599391}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 139527710}
@@ -6287,7 +6283,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 81, y: -41.500206}
+  m_AnchoredPosition: {x: 81, y: -23}
   m_SizeDelta: {x: 0.02, y: 0.01}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &1461599394
@@ -6326,11 +6322,11 @@ MonoBehaviour:
     m_MaxSize: 101
     m_Alignment: 0
     m_AlignByGeometry: 0
-    m_RichText: 0
+    m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: I - this instructions page quick activation;
+  m_Text: <b>I</b> - this instructions page quick activation;
 --- !u!1 &1465162369
 GameObject:
   m_ObjectHideFlags: 0
@@ -7102,17 +7098,17 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 38
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 101
     m_Alignment: 0
     m_AlignByGeometry: 0
-    m_RichText: 0
+    m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 3 - Acceleration keys for fast movement.
+  m_Text: 3 - <b>Acceleration</b> keys for fast movement.
 --- !u!1 &1601183361
 GameObject:
   m_ObjectHideFlags: 0
@@ -7296,7 +7292,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1615090425}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 0.00006, y: 0.00006, z: 0.00006}
   m_Children:
   - {fileID: 1461599392}
@@ -7308,7 +7304,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0.001, y: -0.02905}
+  m_AnchoredPosition: {x: 0.001, y: -0.0288}
   m_SizeDelta: {x: 0.02, y: 0.01}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &1615090428
@@ -19042,7 +19038,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0.0035999976, y: -0.021340014}
+  m_AnchoredPosition: {x: 0.0036, y: -0.02625}
   m_SizeDelta: {x: 0.02, y: 0.01}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &2018212009757951524
@@ -21161,7 +21157,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0.0035999976, y: -0.018170021}
+  m_AnchoredPosition: {x: 0.0036, y: -0.02204}
   m_SizeDelta: {x: 0.02, y: 0.01}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &6004174997823122125
@@ -22448,7 +22444,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2282277072036637098
 RectTransform:
   m_ObjectHideFlags: 0
@@ -28667,7 +28663,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4447822917738560230
 RectTransform:
   m_ObjectHideFlags: 0
@@ -30057,7 +30053,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0.0036, y: -0.001}
+  m_AnchoredPosition: {x: 0.0036, y: -0.00152}
   m_SizeDelta: {x: 0.02, y: 0.01}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &5083019247178383824
@@ -32375,7 +32371,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7334111062117465627}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 0.00006, y: 0.00006, z: 0.00006}
   m_Children:
   - {fileID: 7229150605976023292}
@@ -32384,7 +32380,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0.0035999976, y: -0.03099}
+  m_AnchoredPosition: {x: 0.0036, y: -0.03078}
   m_SizeDelta: {x: 0.02, y: 0.01}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &8955584663325736889
@@ -35267,7 +35263,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0.0035999976, y: -0.015}
+  m_AnchoredPosition: {x: 0.0036, y: -0.01772}
   m_SizeDelta: {x: 0.02, y: 0.01}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &6312460300704590621
@@ -35600,7 +35596,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8511155105439549664}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 0.00006, y: 0.00006, z: 0.00006}
   m_Children:
   - {fileID: 3078315051573277673}
@@ -35609,7 +35605,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0.0035999976, y: -0.004}
+  m_AnchoredPosition: {x: 0.0036, y: -0.00588}
   m_SizeDelta: {x: 0.02, y: 0.01}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &6006305508059250826
@@ -36843,18 +36839,18 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 38
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 101
     m_Alignment: 0
     m_AlignByGeometry: 0
-    m_RichText: 0
+    m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "6 - Middle mouse button: hold it and move\n     a mouse to paint lines
-    in painting mode."
+  m_Text: "6 - <b>Middle mouse button</b>: hold it and move\n     a mouse to paint
+    lines in painting mode."
 --- !u!1 &9142646929387676806
 GameObject:
   m_ObjectHideFlags: 0

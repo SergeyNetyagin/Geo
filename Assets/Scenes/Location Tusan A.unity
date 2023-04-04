@@ -1024,80 +1024,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 231186043045674712, guid: 52159e596d5c2c34ea8b43875d94effd,
-        type: 3}
-      propertyPath: use_in_vr_mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 231186043045674712, guid: 52159e596d5c2c34ea8b43875d94effd,
-        type: 3}
-      propertyPath: target_transform
-      value: 
-      objectReference: {fileID: 1433515331}
-    - target: {fileID: 5394764356624635988, guid: 52159e596d5c2c34ea8b43875d94effd,
-        type: 3}
-      propertyPath: orthographic
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6431838869698954755, guid: 52159e596d5c2c34ea8b43875d94effd,
-        type: 3}
-      propertyPath: use_fast_turn
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6431838869698954755, guid: 52159e596d5c2c34ea8b43875d94effd,
-        type: 3}
-      propertyPath: onDeviceDetected.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6431838869698954755, guid: 52159e596d5c2c34ea8b43875d94effd,
-        type: 3}
-      propertyPath: onDeviceDetected.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6431838869698954755, guid: 52159e596d5c2c34ea8b43875d94effd,
         type: 3}
       propertyPath: onDeviceDetected.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1656528612}
-    - target: {fileID: 6431838869698954755, guid: 52159e596d5c2c34ea8b43875d94effd,
-        type: 3}
-      propertyPath: onDeviceDetected.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6431838869698954755, guid: 52159e596d5c2c34ea8b43875d94effd,
-        type: 3}
-      propertyPath: onDeviceDetected.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: AssignInstructionsDependingOnDevice
-      objectReference: {fileID: 0}
-    - target: {fileID: 6431838869698954755, guid: 52159e596d5c2c34ea8b43875d94effd,
-        type: 3}
-      propertyPath: onDeviceDetected.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 7309809308383894829, guid: 52159e596d5c2c34ea8b43875d94effd,
         type: 3}
       propertyPath: m_Name
       value: Steam VR Camera Rig
       objectReference: {fileID: 0}
-    - target: {fileID: 7417493672764854210, guid: 52159e596d5c2c34ea8b43875d94effd,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.65
-      objectReference: {fileID: 0}
     - target: {fileID: 8938383039987937721, guid: 52159e596d5c2c34ea8b43875d94effd,
         type: 3}
       propertyPath: m_RootOrder
       value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 8938383039987937721, guid: 52159e596d5c2c34ea8b43875d94effd,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8938383039987937721, guid: 52159e596d5c2c34ea8b43875d94effd,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8938383039987937721, guid: 52159e596d5c2c34ea8b43875d94effd,
         type: 3}
