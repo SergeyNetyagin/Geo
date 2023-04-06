@@ -22449,6 +22449,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 935056961021689905, guid: 16e3f51105d0bd749a63b66172683833,
+        type: 3}
+      propertyPath: m_VideoClip
+      value: 
+      objectReference: {fileID: 32900000, guid: c8cadcffd8b5678429c1bd332c9bee8b,
+        type: 3}
     - target: {fileID: 4860721537639017027, guid: 16e3f51105d0bd749a63b66172683833,
         type: 3}
       propertyPath: m_Name

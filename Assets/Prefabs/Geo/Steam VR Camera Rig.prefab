@@ -2963,13 +2963,13 @@ MonoBehaviour:
   key_up_alternative: 280
   key_down: 101
   key_down_alternative: 281
-  key_menu: 109
+  key_menu: 0
   key_instructions: 105
   key_screenshot: 112
-  key_fast_loading_hidden_menu_hospital_road: 286
-  key_fast_loading_hidden_menu_bukit_song: 287
-  key_fast_loading_hidden_menu_tusan_a: 288
-  key_fast_loading_hidden_menu_tusan_b: 289
+  key_fast_loading_hospital_road: 286
+  key_fast_loading_bukit_song: 287
+  key_fast_loading_tusan_a: 288
+  key_fast_loading_tusan_b: 289
   use_keyboard_in_vr_mode: 1
 --- !u!114 &5739551446382225810
 MonoBehaviour:
