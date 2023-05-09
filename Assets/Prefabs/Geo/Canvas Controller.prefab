@@ -5826,7 +5826,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 71b811a278f1bab47b23defc9550a5b1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 51fac1bb674e39a4295098058208cd6b, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -34108,17 +34108,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: '<b>Painting</b> - opens/closes painting mode.
-
-    The paint bar includes
-    from L-R: "Clear all",
-
-    eraser, colour palette, and screen shot.
-
-    Screenshots
-    will be saved in the file folder.
-
-'
+  m_Text: "<b>Painting</b> - opens/closes painting mode.\nColour palette, then L-R:
+    x (clear all), \nmake screenshot, saves and then re-loads\nsketch, eraser."
 --- !u!1 &7737399724910362398
 GameObject:
   m_ObjectHideFlags: 0
@@ -35648,9 +35639,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "<b>Painting</b> - opens/closes painting mode.\nThe paint bar includes
-    colour palette and \nfrom L-R: \"Clear all\", screen shot, \"Eraser\". \nScreenshots
-    will be saved in the file folder.\n"
+  m_Text: "<b>Painting</b> - opens/closes painting mode.\nColour palette, then L-R:
+    x (clear all), \nmake screenshot, saves and then re-loads\nsketch, eraser."
 --- !u!1 &8528642937657059265
 GameObject:
   m_ObjectHideFlags: 0
