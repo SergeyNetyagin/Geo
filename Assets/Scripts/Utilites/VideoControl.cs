@@ -4,6 +4,7 @@ using UnityEngine.Video;
 using UnityEngine.SceneManagement;
 using VertexStudio.VirtualRealty;
 using VertexStudio.Networking;
+using UnityEngine.Playables;
 
 namespace VostokVR.Geo {
 
@@ -29,6 +30,9 @@ namespace VostokVR.Geo {
 
         [SerializeField]
         private InteractableObject handle_sphere;
+
+        [Space( 10 ), SerializeField]
+        private PlayableDirector timeline;
 
         [Space( 10 ), SerializeField, Range( 0f, 10f )]
         private float min_sphere_local_position = 1f;
@@ -75,6 +79,12 @@ namespace VostokVR.Geo {
             if( !video_player.isPlaying ) { 
                 
                 video_player.Play();
+            }
+
+            if( timeline != null ) { 
+            
+                timeline.time = 0;
+                timeline.Play();
             }
         }
 
@@ -124,6 +134,11 @@ namespace VostokVR.Geo {
                 float sphere_position_x = min_sphere_local_position + (max_sphere_local_position - min_sphere_local_position) * slider_control.normalizedValue;
 
                 handle_rect_transform.anchoredPosition3D = new Vector3( sphere_position_x, 0f, 0f );
+
+                if( timeline != null ) {
+
+                    timeline.time = video_player.time;
+                }
             }
         }
 
@@ -134,6 +149,11 @@ namespace VostokVR.Geo {
             pause_button.gameObject.SetActive( true );
 
             video_player.Play();
+
+            if( timeline != null ) {
+
+                timeline.Play();
+            }
 
             if( (NetworkProjectManager.Instance != null) && PhotonNetwork.isMasterClient ) { 
             
@@ -151,6 +171,11 @@ namespace VostokVR.Geo {
             pause_button.gameObject.SetActive( false );
 
             video_player.Pause();
+
+            if( timeline != null ) {
+
+                timeline.Pause();
+            }
 
             if( (NetworkProjectManager.Instance != null) && PhotonNetwork.isMasterClient ) { 
             
