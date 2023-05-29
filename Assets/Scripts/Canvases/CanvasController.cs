@@ -193,6 +193,20 @@ namespace VostokVR.Geo {
         [SerializeField]
         private Vector3 small_mode_local_scale = new Vector3( 0.5f, 0.5f, 0.5f );
 
+        [Space( 10 ), SerializeField]
+        private CanvasGroup panel_message;
+
+        [SerializeField]
+        private Text text_message;
+
+        [SerializeField, Range( 1, 10 )]
+        private float message_timeout = 5;
+
+        [SerializeField]
+        private bool use_messages = true;
+
+        private Coroutine message_coroutine = null;
+
         private ActiveMode current_work_mode = ActiveMode.Movement;
         public ActiveMode Current_work_mode { get { return current_work_mode; } set { current_work_mode = value; } }
 
@@ -218,6 +232,7 @@ namespace VostokVR.Geo {
 
         public bool PC_mode { get; private set; } = false;
 
+
         // Awake is called before the first frame update ##################################################################################################################################################################################################
         private void Awake() {
 
@@ -240,6 +255,9 @@ namespace VostokVR.Geo {
 
             image_global_map.SetActive( starting_minimap_mode == MinimapMode.Local );
             image_local_map.SetActive( starting_minimap_mode == MinimapMode.Global );
+
+            panel_message.gameObject.SetActive( false );
+            panel_message.alpha = 0;
         }
 
         // OnEnable is called before the first frame update ###############################################################################################################################################################################################
@@ -1359,7 +1377,7 @@ namespace VostokVR.Geo {
 
         // Saves screenshot to disk #######################################################################################################################################################################################################################
         private void SaveScreenshotToDisk( string path ) { 
-            
+
             Camera main_camera = ViveInteractionsManager.Instance.Eye_camera_transform.GetComponent<Camera>();
 
             Camera shooting_camera = ViveInteractionsManager.Instance.Menu_camera_transform.GetComponent<Camera>();
@@ -1367,6 +1385,8 @@ namespace VostokVR.Geo {
             shooting_camera.fieldOfView = main_camera.fieldOfView;
 
             RenderTexture render_texture = new RenderTexture( ProjectData.Instance.Screenshot_width, ProjectData.Instance.Screenshot_height, 24 );
+
+            bool success = true;
 
             try {
             
@@ -1410,6 +1430,13 @@ namespace VostokVR.Geo {
 
             catch { 
             
+                success = false;
+
+                if( use_messages ) { 
+                    
+                    ShowMessage( "Cannot write screenshot to file " + path + "!" );
+                }
+
                 #if( UNITY_EDITOR )
                 Debug.LogError( "Cannot write screenshot to file " + path + "!" );
                 #endif
@@ -1421,7 +1448,53 @@ namespace VostokVR.Geo {
 
                     Destroy( render_texture );
                 }
-            } 
+
+                if( success && use_messages ) { 
+
+                    ShowMessage( "Screenshot has been saved to " + path );
+                }
+            }
+
+            void ShowMessage( string message ) { 
+                
+                if( message_coroutine != null ) { 
+                    
+                    StopCoroutine( message_coroutine );
+                }
+
+                message_coroutine = StartCoroutine( ShowTextMessage( message ) );
+            }
+
+            IEnumerator ShowTextMessage( string message ) { 
+
+                text_message.text = message;
+
+                panel_message.alpha = 1;
+                panel_message.gameObject.SetActive( true );
+
+                float fade_ratio = 1f / message_timeout;
+
+                for( float timer = 0; timer < message_timeout; timer += Time.unscaledDeltaTime ) { 
+      
+                    float alpha = 1 - timer * fade_ratio;
+
+                    if( alpha < 0 ) { 
+                    
+                        alpha = 0;
+                    }
+
+                    panel_message.alpha = alpha;
+
+                    yield return null;
+                }
+
+                panel_message.alpha = 0;
+                panel_message.gameObject.SetActive( false );
+
+                message_coroutine = null;
+
+                yield break;
+            }
         }
 
         // Load specified scene ###########################################################################################################################################################################################################################
