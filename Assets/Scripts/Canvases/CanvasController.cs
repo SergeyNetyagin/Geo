@@ -1347,30 +1347,30 @@ namespace VostokVR.Geo {
         // Makes screenshot and save to disk ##############################################################################################################################################################################################################
         public void MakeScreenshot() {
 
-            string filename = Path.Combine( ConfigControl.Instance.GetScreenshotsFolder(), ConfigControl.Instance.GetScreenshotsFilename( SceneManager.GetActiveScene().name ) );
+            string path = Path.Combine( ConfigControl.Instance.GetScreenshotsFolder(), ConfigControl.Instance.GetScreenshotsFilename( SceneManager.GetActiveScene().name ) );
 
             ViveInteractionsManager.Instance.GetComponent<AudioSource>().PlayOneShot( ProjectData.Instance.Make_screenshot_clip );
 
             try {
 
-                if( !Directory.Exists( Path.GetDirectoryName( filename ) ) ) { 
+                if( !Directory.Exists( Path.GetDirectoryName( path ) ) ) { 
 
-                    Directory.CreateDirectory( Path.GetDirectoryName( filename ) );
+                    Directory.CreateDirectory( Path.GetDirectoryName( path ) );
                 }
             }
 
             catch { 
             
                 #if( UNITY_EDITOR )
-                Debug.LogError( "Cannot create directory " + Path.GetDirectoryName( filename ) + "!" );
+                Debug.LogError( "Cannot create directory " + Path.GetDirectoryName( path ) + "!" );
                 #endif
             }
 
             finally { 
             
-                if( Directory.Exists( Path.GetDirectoryName( filename ) ) ) { 
+                if( Directory.Exists( Path.GetDirectoryName( path ) ) ) { 
 
-                    SaveScreenshotToDisk( filename );
+                    SaveScreenshotToDisk( path );
                 }
             }
         }
@@ -1417,8 +1417,8 @@ namespace VostokVR.Geo {
                 
                 byte[] bytes = screenshot.EncodeToPNG();
 
-                path += ".png";
-                
+                path = ConfigControl.Instance.ArrangeSlashes( path + ".png" );
+
                 File.WriteAllBytes( path, bytes );
           
                 #if( UNITY_EDITOR )

@@ -10555,7 +10555,7 @@ MonoBehaviour:
   small_mode_local_scale: {x: 0.5, y: 0.5, z: 0.5}
   panel_message: {fileID: 1070400106}
   text_message: {fileID: 652760032}
-  message_timeout: 5
+  message_timeout: 6
   use_messages: 1
 --- !u!114 &4343416043246660272
 MonoBehaviour:

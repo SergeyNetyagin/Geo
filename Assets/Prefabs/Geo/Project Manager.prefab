@@ -413,10 +413,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4d33d6be9b683b419984f142592e8b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  resources_location: 1
   asset_bundles_default_folder: AssetBundles
   config_files_runtime_folder: Geo Next Generation Networking_Data\StreamingAssets
   screenshots_config_file_name: screenshots.config
   assetbundles_config_file_name: assetbundles.config
+  assetbundles_distribution_folder: Runtime Asset Bundles
+  screenshots_distribution_folder: Runtime Screenshots
 --- !u!114 &7267336301441998721
 MonoBehaviour:
   m_ObjectHideFlags: 0

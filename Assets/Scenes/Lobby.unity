@@ -4227,7 +4227,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
-  Default_fade_duration: 3
+  Default_fade_duration: 2
   Motion_fade_duration: 0.1
   Stay_fade_duration: 0.25
   Collision_fade_duration: 0.3
