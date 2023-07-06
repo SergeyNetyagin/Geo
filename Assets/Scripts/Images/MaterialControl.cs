@@ -145,7 +145,7 @@ namespace VostokVR.Geo {
                     #if( DEBUG_MODE )
                     if( Application.isPlaying ) {
                     
-                        CanvasController.Instance.ShowDebugInfo( this, "Material for " + mesh_renderer.name + " changed to the LOW quality." );
+                        Debug.Log( "Material for " + mesh_renderer.name + " changed to the LOW quality." );
                     }
                     #endif
 
@@ -175,7 +175,7 @@ namespace VostokVR.Geo {
                     #if( DEBUG_MODE )
                     if( Application.isPlaying ) {
                     
-                        CanvasController.Instance.ShowDebugInfo( this, "Low quality material for " + mesh_renderer.name + " cannot assigned because material is null!" );
+                        Debug.Log( "Low quality material for " + mesh_renderer.name + " cannot assigned because material is null!" );
                     }
                     #endif
                 }
@@ -195,7 +195,7 @@ namespace VostokVR.Geo {
                     #if( DEBUG_MODE )
                     if( Application.isPlaying ) {
                     
-                        CanvasController.Instance.ShowDebugInfo( this, "Material for " + mesh_renderer.name + " changed to the HIGH quality." );
+                        Debug.Log( "Material for " + mesh_renderer.name + " changed to the HIGH quality." );
                     }
                     #endif
 
@@ -221,7 +221,7 @@ namespace VostokVR.Geo {
                     #if( DEBUG_MODE )
                     if( Application.isPlaying ) {
                     
-                        CanvasController.Instance.ShowDebugInfo( this, "Cannot load HIGH qiality material for " + mesh_renderer.name + " because material is empty and path is empty!" );
+                        Debug.Log( "Cannot load HIGH qiality material for " + mesh_renderer.name + " because material is empty and path is empty!" );
                     }
                     #endif
                 }
@@ -263,7 +263,7 @@ namespace VostokVR.Geo {
                 #if( DEBUG_MODE )
                 if( Application.isPlaying ) {
                 
-                    CanvasController.Instance.ShowDebugInfo( this, "Cannot load " + internal_asset_path + " because asset bundle " + asset_bundle_name + " was not downloaded!" );
+                    Debug.Log( "Cannot load " + internal_asset_path + " because asset bundle " + asset_bundle_name + " was not downloaded!" );
                 }
                 #endif
             }
@@ -284,7 +284,7 @@ namespace VostokVR.Geo {
                     #if( DEBUG_MODE )
                     if( Application.isPlaying ) {
                     
-                        CanvasController.Instance.ShowDebugInfo( this, "Cannot load " + internal_asset_path + " from loaded asset bundle " + asset_bundle_name + "!" );
+                        Debug.Log( "Cannot load " + internal_asset_path + " from loaded asset bundle " + asset_bundle_name + "!" );
                     }
                     #endif
                 }
@@ -300,7 +300,7 @@ namespace VostokVR.Geo {
                     #if( DEBUG_MODE )
                     if( Application.isPlaying ) {
                     
-                        CanvasController.Instance.ShowDebugInfo( this, "Material for " + mesh_renderer.name + " changed to the HIGH quality." );
+                        Debug.Log( "Material for " + mesh_renderer.name + " changed to the HIGH quality." );
                     }
                     #endif
                 }

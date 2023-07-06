@@ -16,3 +16,4 @@ Assembly*.*
 *.lock
 *.suo
 *.ide
+/Builds

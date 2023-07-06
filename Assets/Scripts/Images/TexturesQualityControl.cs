@@ -273,7 +273,7 @@ namespace VostokVR.Geo {
                     #if( DEBUG_MODE )
                     if( Application.isPlaying ) {
                 
-                        CanvasController.Instance.ShowDebugInfo( this, "Try to load asset bundle " + asset_bundle_path, true );
+                        Debug.Log( "Try to load asset bundle " + asset_bundle_path );
                     }
                     #endif
 
@@ -297,7 +297,7 @@ namespace VostokVR.Geo {
                     #if( DEBUG_MODE )
                     if( Application.isPlaying ) {
                     
-                        CanvasController.Instance.ShowDebugInfo( this, "Asset bunlde " + asset_bundle_control.Asset_bundle.name + " loaded", true );
+                        Debug.Log( "Asset bunlde " + asset_bundle_control.Asset_bundle.name + " loaded" );
                     }
                     #endif
 
@@ -314,7 +314,7 @@ namespace VostokVR.Geo {
                     #if( DEBUG_MODE )
                     if( Application.isPlaying ) {
                     
-                        CanvasController.Instance.ShowDebugInfo( this, "Cannot load asset bunlde " + asset_bundle_path, true );
+                        Debug.Log( "Cannot load asset bunlde " + asset_bundle_path );
                     }
                     #endif
 

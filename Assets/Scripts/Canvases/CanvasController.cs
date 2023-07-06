@@ -78,12 +78,6 @@ namespace VostokVR.Geo {
         [SerializeField]
         private GameObject panel_instructions;
 
-        [SerializeField]
-        private GameObject panel_debug;
-
-        [SerializeField]
-        private Text text_debug;
-
         [Space( 10 ), SerializeField]
         private Button button_load_group;
 
@@ -238,12 +232,6 @@ namespace VostokVR.Geo {
 
             Instance = this;
 
-            #if( DEBUG_MODE )
-            panel_debug.gameObject.SetActive( true );
-            #else
-            panel_debug.gameObject.SetActive( false );
-            #endif
-
             current_minimap_mode = starting_minimap_mode;
 
             panel_minimaps.SetActive( starting_minimap_mode == MinimapMode.Global );
@@ -357,15 +345,6 @@ namespace VostokVR.Geo {
 
         // Update is called once per frame ################################################################################################################################################################################################################
         private void Update() {
-
-            #if( DEBUG_MODE )
-            if( !panel_debug.gameObject.activeSelf ) {
-            
-                panel_debug.gameObject.SetActive( true );
-            }
-
-            //ShowDebugInfo( this, ViveInteractionsManager.Instance.Device_model.ToString() );            
-            #endif
 
             if( image_player.activeInHierarchy ) {
 
@@ -1593,24 +1572,6 @@ namespace VostokVR.Geo {
             image_local_map.SetActive( true );
 
             image_player.SetActive( false );
-        }
-
-        // Shows debug info ###############################################################################################################################################################################################################################
-        public void ShowDebugInfo( MonoBehaviour source, string message, bool add_text = false ) { 
-
-            string source_text = source.ToString().Substring( source.ToString().LastIndexOf( "." ) + 1 );
-
-            source_text = source_text.Replace( ")", string.Empty );
-
-            if( add_text ) {
-            
-                text_debug.text += "\n" + source_text.ToString() + " >>> " +  message;
-            }
-
-            else { 
-                
-                text_debug.text = source_text.ToString() + " >>> " +  message;
-            }
         }
 
         // Adapts menu for the player in PC or VR mode ####################################################################################################################################################################################################

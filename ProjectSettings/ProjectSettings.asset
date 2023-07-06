@@ -177,7 +177,7 @@ PlayerSettings:
   applicationIdentifier:
     Standalone: com.PetroEDGE.Geo
   buildNumber:
-    Standalone: 230629100
+    Standalone: 230706100
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 19
   AndroidTargetSdkVersion: 0
