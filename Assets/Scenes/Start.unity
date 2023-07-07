@@ -1509,7 +1509,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!223 &6544767008472451024
 Canvas:
   m_ObjectHideFlags: 0
@@ -1548,7 +1548,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -252.5}
-  m_SizeDelta: {x: 20, y: 5}
+  m_SizeDelta: {x: 1000, y: 72}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &6595491526582021553
 MonoBehaviour:
@@ -1580,7 +1580,7 @@ MonoBehaviour:
     m_AlignByGeometry: 0
     m_RichText: 0
     m_HorizontalOverflow: 1
-    m_VerticalOverflow: 1
+    m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: DEBUG INFO
 --- !u!4 &6690356443776432976
@@ -2119,7 +2119,7 @@ MonoBehaviour:
   show_messages: 1
   show_warnings: 1
   show_errors: 1
-  show_frame_rate: 1
+  show_frame_rate: 0
   panel_debug: {fileID: 2865168640416922130}
   text_message: {fileID: 6595491526582021553}
   text_fps: {fileID: 8750049411870725652}

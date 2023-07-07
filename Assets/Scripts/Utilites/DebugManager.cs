@@ -141,6 +141,7 @@ namespace VostokVR.Geo {
                     panel_debug.SetActive( true );
                     panel_debug_console.SetActive( show_console );
                     text_message.gameObject.SetActive( show_messages || show_warnings || show_errors );
+                    text_fps.gameObject.SetActive( show_frame_rate );
                     console_field.gameObject.SetActive( true );
                 }
                 #else
@@ -166,6 +167,7 @@ namespace VostokVR.Geo {
                 panel_debug.SetActive( true );
                 panel_debug_console.SetActive( show_console );
                 text_message.gameObject.SetActive( show_messages || show_warnings || show_errors );
+                text_fps.gameObject.SetActive( show_frame_rate );
                 console_field.gameObject.SetActive( true );
                 gameObject.SetActive( true );
 
@@ -213,20 +215,6 @@ namespace VostokVR.Geo {
             if( Application.isPlaying && show_console ) {
 
                 Application.logMessageReceived -= DebugLog;
-            }
-        }
-        #endif
-
-
-        /// <summary>
-        /// Use this for initialization.
-        /// </summary>
-        #if( DEBUG_MODE )        
-        private void Start() {
-
-            if( show_frame_rate ) {
-            
-                text_fps.gameObject.SetActive( true );
             }
         }
         #endif
