@@ -355,7 +355,7 @@ PrefabInstance:
         type: 3}
       propertyPath: target_camera
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1705616520}
     - target: {fileID: 223693391143202100, guid: 41af6360ba45d8049b0df2a9a93a2ded,
         type: 3}
       propertyPath: m_Camera
@@ -1064,27 +1064,27 @@ PrefabInstance:
         type: 3}
       propertyPath: Controller_transform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1705616521}
     - target: {fileID: 3620012123546526705, guid: 809739075f916e34dbc80f312db5bec6,
         type: 3}
       propertyPath: Eye_camera_transform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1705616519}
     - target: {fileID: 3620012123546526705, guid: 809739075f916e34dbc80f312db5bec6,
         type: 3}
       propertyPath: Ears_camera_transform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1705616517}
     - target: {fileID: 3620012123546526705, guid: 809739075f916e34dbc80f312db5bec6,
         type: 3}
       propertyPath: Head_camera_transform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1705616518}
     - target: {fileID: 3620012123546526705, guid: 809739075f916e34dbc80f312db5bec6,
         type: 3}
       propertyPath: Menu_camera_transform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1705616516}
     - target: {fileID: 3724317775958966024, guid: 809739075f916e34dbc80f312db5bec6,
         type: 3}
       propertyPath: room_name
@@ -1740,6 +1740,42 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c8b5147dedaa764aab37f3f27f8a023, type: 3}
+--- !u!4 &1705616516 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3790916522376713549, guid: 6c8b5147dedaa764aab37f3f27f8a023,
+    type: 3}
+  m_PrefabInstance: {fileID: 1705616515}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1705616517 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1287948983818693918, guid: 6c8b5147dedaa764aab37f3f27f8a023,
+    type: 3}
+  m_PrefabInstance: {fileID: 1705616515}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1705616518 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1846078242698409153, guid: 6c8b5147dedaa764aab37f3f27f8a023,
+    type: 3}
+  m_PrefabInstance: {fileID: 1705616515}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1705616519 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7949220258011909253, guid: 6c8b5147dedaa764aab37f3f27f8a023,
+    type: 3}
+  m_PrefabInstance: {fileID: 1705616515}
+  m_PrefabAsset: {fileID: 0}
+--- !u!20 &1705616520 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 244647209333525179, guid: 6c8b5147dedaa764aab37f3f27f8a023,
+    type: 3}
+  m_PrefabInstance: {fileID: 1705616515}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1705616521 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 244647209333525178, guid: 6c8b5147dedaa764aab37f3f27f8a023,
+    type: 3}
+  m_PrefabInstance: {fileID: 1705616515}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1892626622
 PrefabInstance:
   m_ObjectHideFlags: 0

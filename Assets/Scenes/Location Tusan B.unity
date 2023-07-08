@@ -997,6 +997,42 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c8b5147dedaa764aab37f3f27f8a023, type: 3}
+--- !u!4 &1297177014 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3790916522376713549, guid: 6c8b5147dedaa764aab37f3f27f8a023,
+    type: 3}
+  m_PrefabInstance: {fileID: 1297177013}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1297177015 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1287948983818693918, guid: 6c8b5147dedaa764aab37f3f27f8a023,
+    type: 3}
+  m_PrefabInstance: {fileID: 1297177013}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1297177016 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1846078242698409153, guid: 6c8b5147dedaa764aab37f3f27f8a023,
+    type: 3}
+  m_PrefabInstance: {fileID: 1297177013}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1297177017 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7949220258011909253, guid: 6c8b5147dedaa764aab37f3f27f8a023,
+    type: 3}
+  m_PrefabInstance: {fileID: 1297177013}
+  m_PrefabAsset: {fileID: 0}
+--- !u!20 &1297177018 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 244647209333525179, guid: 6c8b5147dedaa764aab37f3f27f8a023,
+    type: 3}
+  m_PrefabInstance: {fileID: 1297177013}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1297177019 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 244647209333525178, guid: 6c8b5147dedaa764aab37f3f27f8a023,
+    type: 3}
+  m_PrefabInstance: {fileID: 1297177013}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1414460317
 GameObject:
   m_ObjectHideFlags: 0
@@ -1505,27 +1541,27 @@ PrefabInstance:
         type: 3}
       propertyPath: Controller_transform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1297177019}
     - target: {fileID: 3620012123546526705, guid: 809739075f916e34dbc80f312db5bec6,
         type: 3}
       propertyPath: Eye_camera_transform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1297177017}
     - target: {fileID: 3620012123546526705, guid: 809739075f916e34dbc80f312db5bec6,
         type: 3}
       propertyPath: Ears_camera_transform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1297177015}
     - target: {fileID: 3620012123546526705, guid: 809739075f916e34dbc80f312db5bec6,
         type: 3}
       propertyPath: Head_camera_transform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1297177016}
     - target: {fileID: 3620012123546526705, guid: 809739075f916e34dbc80f312db5bec6,
         type: 3}
       propertyPath: Menu_camera_transform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1297177014}
     - target: {fileID: 3724317775958966024, guid: 809739075f916e34dbc80f312db5bec6,
         type: 3}
       propertyPath: room_name
@@ -1642,7 +1678,7 @@ PrefabInstance:
         type: 3}
       propertyPath: target_camera
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1297177018}
     - target: {fileID: 223693391143202100, guid: 41af6360ba45d8049b0df2a9a93a2ded,
         type: 3}
       propertyPath: m_Camera

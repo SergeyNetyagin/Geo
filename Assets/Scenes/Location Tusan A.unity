@@ -153,6 +153,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &105913911 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 244647209333525178, guid: 6c8b5147dedaa764aab37f3f27f8a023,
+    type: 3}
+  m_PrefabInstance: {fileID: 541497649}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &276798960
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -168,7 +174,7 @@ PrefabInstance:
         type: 3}
       propertyPath: target_camera
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1937538864}
     - target: {fileID: 223693391143202100, guid: 41af6360ba45d8049b0df2a9a93a2ded,
         type: 3}
       propertyPath: m_Camera
@@ -360,6 +366,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c8b5147dedaa764aab37f3f27f8a023, type: 3}
+--- !u!4 &589307433 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1846078242698409153, guid: 6c8b5147dedaa764aab37f3f27f8a023,
+    type: 3}
+  m_PrefabInstance: {fileID: 541497649}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &606281381
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -836,6 +848,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdba9a7d894aa424284eca1e7e73febc, type: 3}
+--- !u!4 &1364813572 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3790916522376713549, guid: 6c8b5147dedaa764aab37f3f27f8a023,
+    type: 3}
+  m_PrefabInstance: {fileID: 541497649}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1406526211
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1091,27 +1109,27 @@ PrefabInstance:
         type: 3}
       propertyPath: Controller_transform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 105913911}
     - target: {fileID: 3620012123546526705, guid: 809739075f916e34dbc80f312db5bec6,
         type: 3}
       propertyPath: Eye_camera_transform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1937538862}
     - target: {fileID: 3620012123546526705, guid: 809739075f916e34dbc80f312db5bec6,
         type: 3}
       propertyPath: Ears_camera_transform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1892150915}
     - target: {fileID: 3620012123546526705, guid: 809739075f916e34dbc80f312db5bec6,
         type: 3}
       propertyPath: Head_camera_transform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 589307433}
     - target: {fileID: 3620012123546526705, guid: 809739075f916e34dbc80f312db5bec6,
         type: 3}
       propertyPath: Menu_camera_transform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1364813572}
     - target: {fileID: 3724317775958966024, guid: 809739075f916e34dbc80f312db5bec6,
         type: 3}
       propertyPath: room_name
@@ -1767,6 +1785,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1892150915 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1287948983818693918, guid: 6c8b5147dedaa764aab37f3f27f8a023,
+    type: 3}
+  m_PrefabInstance: {fileID: 541497649}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1902555094
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1836,6 +1860,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6485adae9bc6e4741967e852911cc2c8, type: 3}
+--- !u!4 &1937538862 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7949220258011909253, guid: 6c8b5147dedaa764aab37f3f27f8a023,
+    type: 3}
+  m_PrefabInstance: {fileID: 541497649}
+  m_PrefabAsset: {fileID: 0}
+--- !u!20 &1937538864 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 244647209333525179, guid: 6c8b5147dedaa764aab37f3f27f8a023,
+    type: 3}
+  m_PrefabInstance: {fileID: 541497649}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2115070310
 GameObject:
   m_ObjectHideFlags: 0

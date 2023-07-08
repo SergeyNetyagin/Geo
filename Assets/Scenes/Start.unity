@@ -1509,7 +1509,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!223 &6544767008472451024
 Canvas:
   m_ObjectHideFlags: 0
@@ -2119,7 +2119,7 @@ MonoBehaviour:
   show_messages: 1
   show_warnings: 1
   show_errors: 1
-  show_frame_rate: 0
+  show_frame_rate: 1
   panel_debug: {fileID: 2865168640416922130}
   text_message: {fileID: 6595491526582021553}
   text_fps: {fileID: 8750049411870725652}

@@ -5120,11 +5120,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2428b5b8f667084aac183237a98c7cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  show_console: 0
-  show_messages: 0
-  show_warnings: 0
-  show_errors: 0
-  show_frame_rate: 0
+  show_console: 1
+  show_messages: 1
+  show_warnings: 1
+  show_errors: 1
+  show_frame_rate: 1
   panel_debug: {fileID: 4899114357121768712}
   text_message: {fileID: 4591945004324539051}
   text_fps: {fileID: 2112279120473387278}
@@ -5722,7 +5722,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &4197038268084732508
 GameObject:
   m_ObjectHideFlags: 0
@@ -6045,7 +6045,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5472620315771962801 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3899161103624921837, guid: 03f6d4da470a254429fc2f965930b86c,
@@ -6117,7 +6117,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6893325743375119652
 RectTransform:
   m_ObjectHideFlags: 0
