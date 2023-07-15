@@ -3100,11 +3100,6 @@ PrefabInstance:
       propertyPath: onDeviceDetected.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 4061084237875124335}
-    - target: {fileID: 2750808822459284736, guid: 6c8b5147dedaa764aab37f3f27f8a023,
-        type: 3}
-      propertyPath: onDeviceDetected.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: AssignInstructionsDependingOnDevice
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c8b5147dedaa764aab37f3f27f8a023, type: 3}
 --- !u!1001 &794192738198655985

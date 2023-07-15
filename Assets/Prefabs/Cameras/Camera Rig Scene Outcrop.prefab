@@ -1026,7 +1026,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 086fee3e0edb4f6498fee963462503b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  default_device_model: 1
+  default_device_model: 2
   Camera_rig_transform: {fileID: 244647209333525178}
   Helmet_collider_transform: {fileID: 1783978477387018373}
   Eye_camera_transform: {fileID: 7949220258011909253}
