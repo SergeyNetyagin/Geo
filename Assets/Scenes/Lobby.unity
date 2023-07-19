@@ -5319,6 +5319,80 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: 'FPS: 0'
+--- !u!1001 &2398659284682268450
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4217739394734424939, guid: 17f5864a75898e4449aa1b3d82eee5db,
+        type: 3}
+      propertyPath: m_Name
+      value: Oculus Rift Camera Rig Lobby
+      objectReference: {fileID: 0}
+    - target: {fileID: 4217739394734792523, guid: 17f5864a75898e4449aa1b3d82eee5db,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4217739394734792523, guid: 17f5864a75898e4449aa1b3d82eee5db,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4217739394734792523, guid: 17f5864a75898e4449aa1b3d82eee5db,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4217739394734792523, guid: 17f5864a75898e4449aa1b3d82eee5db,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4217739394734792523, guid: 17f5864a75898e4449aa1b3d82eee5db,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4217739394734792523, guid: 17f5864a75898e4449aa1b3d82eee5db,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4217739394734792523, guid: 17f5864a75898e4449aa1b3d82eee5db,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4217739394734792523, guid: 17f5864a75898e4449aa1b3d82eee5db,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4217739394734792523, guid: 17f5864a75898e4449aa1b3d82eee5db,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4217739394734792523, guid: 17f5864a75898e4449aa1b3d82eee5db,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4217739394734792523, guid: 17f5864a75898e4449aa1b3d82eee5db,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4217739394734851593, guid: 17f5864a75898e4449aa1b3d82eee5db,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 17f5864a75898e4449aa1b3d82eee5db, type: 3}
 --- !u!222 &2772761767117946308
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6515,7 +6589,7 @@ RectTransform:
   - {fileID: 5776977026789969493}
   - {fileID: 4197038267503463212}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -6695,14 +6769,20 @@ PrefabInstance:
     - target: {fileID: 1774301316788457870, guid: 03f6d4da470a254429fc2f965930b86c,
         type: 3}
       propertyPath: m_Name
-      value: Camera Rig Scene Lobby
+      value: HTC Vive Camera Rig Scene Lobby
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774301316788457870, guid: 03f6d4da470a254429fc2f965930b86c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2642564237046254240, guid: 03f6d4da470a254429fc2f965930b86c,
         type: 3}
       propertyPath: default_device_model
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 9074257866663114410, guid: 03f6d4da470a254429fc2f965930b86c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 03f6d4da470a254429fc2f965930b86c, type: 3}
 --- !u!1 &9136144447367263393
 GameObject:

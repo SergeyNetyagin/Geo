@@ -3093,7 +3093,12 @@ PrefabInstance:
     - target: {fileID: 1882229238478022190, guid: 6c8b5147dedaa764aab37f3f27f8a023,
         type: 3}
       propertyPath: m_Name
-      value: Camera Rig Scene Outcrop
+      value: HTC Vive Camera Rig Scene Outcrop
+      objectReference: {fileID: 0}
+    - target: {fileID: 1882229238478022190, guid: 6c8b5147dedaa764aab37f3f27f8a023,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2750808822459284736, guid: 6c8b5147dedaa764aab37f3f27f8a023,
         type: 3}
@@ -4307,6 +4312,75 @@ Transform:
   m_Father: {fileID: 408853136}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 207, z: 0}
+--- !u!1001 &7368152750699125762
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4351999371748039702, guid: 356bc55cebaeab64f838144c6eacc728,
+        type: 3}
+      propertyPath: m_Name
+      value: Oculus Rift Camera Rig Outcrop
+      objectReference: {fileID: 0}
+    - target: {fileID: 4351999371748065334, guid: 356bc55cebaeab64f838144c6eacc728,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 4351999371748065334, guid: 356bc55cebaeab64f838144c6eacc728,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4351999371748065334, guid: 356bc55cebaeab64f838144c6eacc728,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4351999371748065334, guid: 356bc55cebaeab64f838144c6eacc728,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4351999371748065334, guid: 356bc55cebaeab64f838144c6eacc728,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5948228
+      objectReference: {fileID: 0}
+    - target: {fileID: 4351999371748065334, guid: 356bc55cebaeab64f838144c6eacc728,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4351999371748065334, guid: 356bc55cebaeab64f838144c6eacc728,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.8038569
+      objectReference: {fileID: 0}
+    - target: {fileID: 4351999371748065334, guid: 356bc55cebaeab64f838144c6eacc728,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4351999371748065334, guid: 356bc55cebaeab64f838144c6eacc728,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4351999371748065334, guid: 356bc55cebaeab64f838144c6eacc728,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 107
+      objectReference: {fileID: 0}
+    - target: {fileID: 4351999371748065334, guid: 356bc55cebaeab64f838144c6eacc728,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 356bc55cebaeab64f838144c6eacc728, type: 3}
 --- !u!1001 &7624982300776537035
 PrefabInstance:
   m_ObjectHideFlags: 0
